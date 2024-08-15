@@ -47,7 +47,7 @@ form button{
 }
 form button span{
     position: relative;
-    right: 15px;
+    right: 25px;
 }
 ::placeholder{
     color: gray;
