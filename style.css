@@ -11,7 +11,7 @@ body{
 h1{
     text-align: center;
     margin: 100px auto 50px;
-    font-weight: 500;
+    font-weight: bold;
 }
 form{
     width: 90%;
@@ -35,6 +35,7 @@ form input{
 }
 form button{
     height: 100%;
+    width: 30px;
     background-color: #ff3929;
     color: #fff;
     padding: 0 40px;
@@ -44,9 +45,13 @@ form button{
     border-bottom-right-radius: 8px;
     cursor: pointer;
 }
+form button span{
+    position: relative;
+    right: 15px;
+}
 ::placeholder{
-    color: #fff;
-    font-size: 18px;
+    color: gray;
+    font-size: 15px;
 }
 
 #show-more-btn{
@@ -66,12 +71,26 @@ form button{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap:40px;
+    margin-top: 50px;
     
 }
 #search-result img{
-    width: 100%;
+    width: 260px;
     height: 230px;
     object-fit: cover;
     border-radius: 5px;
+}
+@media (width<=600px){
+    #search-box{
+        width: 100px;
+    }
+    form{
+        height: 40px;
+    }
+    #search-result{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
 }
 
